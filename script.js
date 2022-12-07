@@ -38,7 +38,7 @@ class Calculator{
             this.currentNum = String(Number(this.currentNum) * Number(this.previousNum))
             this.previousNum = ''
         }else if(this.operation === '-'){
-            this.currentNum = String(Number(this.currentNum) - Number(this.previousNum))
+            this.currentNum = String(Number(this.previousNum) - Number(this.currentNum))
             this.previousNum = ''
         }else if(this.operation === '/'){
             this.currentNum = String(Number(this.previousNum) / Number(this.currentNum))
